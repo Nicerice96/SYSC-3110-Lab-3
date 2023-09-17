@@ -19,5 +19,11 @@ public class AddressBook {
     public static void main (String []args){
         System.out.println("Address Book");
         System.out.println("Testing commit again");
+
+        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
+        AddressBook addressBook = new AddressBook();
+
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 }
