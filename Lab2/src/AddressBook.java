@@ -7,12 +7,14 @@ public class AddressBook {
         Bud_list = new ArrayList<BuddyInfo>();
     }
 
-    private void addBuddy(BuddyInfo buddy){
+    public void addBuddy(BuddyInfo buddy){
         Bud_list.add(buddy);
     }
 
-    private void removeBuddy(BuddyInfo buddy){
-        Bud_list.remove(buddy);
+    public void removeBuddy(int index){
+        if (index >= 0 && index < Bud_list.size()){
+            Bud_list.remove(index);
+        };
     }
 
 
@@ -24,6 +26,7 @@ public class AddressBook {
         AddressBook addressBook = new AddressBook();
 
         addressBook.addBuddy(buddy);
-        addressBook.removeBuddy(buddy);
+        addressBook.removeBuddy(0);
+
     }
 }
