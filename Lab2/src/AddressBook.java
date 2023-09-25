@@ -16,8 +16,7 @@ public class AddressBook {
             Bud_list.remove(index);
         };
     }
-
-
+// Some random text 
     public static void main (String []args){
         System.out.println("Address Book");
         System.out.println("Testing commit again");
